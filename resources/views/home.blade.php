@@ -2,30 +2,7 @@
 
 @section('content')
 <div class="container-fluid position-relative p-0">
-    <!-- Navbar -->
-    {{-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">AI Travel & Tours</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a class="nav-link" href="{{ route('home') }}">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="{{ route('about') }}">About Us</a></li>
-                <li class="nav-item"><a class="nav-link" href="{{ route('umra.haj') }}">Umra & Haj</a></li>
-                <li class="nav-item"><a class="nav-link" href="{{ route('contact') }}">Contact Us</a></li>
-                @auth
-                    <li class="nav-item"><a class="nav-link" href="{{ route('logout') }}">Logout</a></li>
-                @else
-                    <li class="nav-item"><a class="nav-link" href="{{ route('login') }}">Login</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ route('register') }}">Register</a></li>
-                @endauth
-            </ul>
-        </div>
-    </nav> --}}
-
     <!-- Hero Section -->
-
     <div class="container-fluid bg-primary py-5 mb-5 hero-header">
         <div class="container py-5">
             <div class="row justify-content-center py-5">
@@ -35,7 +12,7 @@
                     <div class="position-relative w-75 mx-auto animated slideInDown">
 
                         @auth
-                        {{-- action="{{ route('search') }}" method="POST" --}}
+
                         <form >
                             @csrf
                         <div class="search-box">
@@ -84,38 +61,6 @@
             </div>
         </div>
     </div>
-    {{-- <div class="jumbotron text-center">
-        <h1 class="display-4">Welcome to AI Travel & Tours</h1>
-        <p class="lead">Discover the best flights, stays, and tours powered by advanced AI.</p>
-        <a class="btn btn-primary btn-lg" href="{{ route('umra.haj') }}" role="button">Explore Umra & Haj Packages</a>
-    </div> --}}
-
-    <!-- Search Section -->
-    {{-- <section class="mt-5">
-        <h2 class="text-center">Search for Your Travel Plans</h2>
-        @auth
-            <form action="{{ route('search') }}" method="POST">
-                @csrf
-                <div class="form-group">
-                    <textarea name="prompt" class="form-control" placeholder="Enter your travel requirements (e.g., 'Non-stop flight from JFK to LHR')..." required></textarea>
-                </div>
-                <button type="submit" class="btn btn-success">Search</button>
-            </form>
-        @else
-            <p class="text-center">Please <a class="btn btn-primary" href="{{ route('login') }}">Login</a> or <a class="btn btn-info" href="{{ route('register') }}">Register</a> to use the search functionality.</p>
-        @endauth
-    </section> --}}
-
-    <!-- Results Section -->
-    {{-- @if(session('error'))
-<div class="alert alert-danger mt-4">
-    {{ session('error') }}
-</div>
-@endif --}}
-
-
-
-
 @if(isset($results) && !empty($results))
 <section class="mt-5">
     <h2 class="text-center">Search Results</h2>
@@ -523,8 +468,6 @@
         </div>
     </div>
     <!-- Testimonial End -->
-
-    {{-- @include() --}}
     <script>
 
         const texts = [
@@ -584,4 +527,4 @@
         otherButtons.forEach(button => button.addEventListener('click', showLoadingAndRedirect));
     </script>
 @endsection
-{{-- <x-button-popup></x-button-popup> --}}
+
