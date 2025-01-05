@@ -33,11 +33,41 @@
                     <h1 class="display-3 text-white mb-3 animated slideInDown">TripAI - Your Smart TravelBuddy</h1>
                     <p class="fs-4 text-white mb-4 animated slideInDown">Enjoy stress-free travel from start to finish. From booking flights and hotels to arranging personalized tours and transfers, we ensure your travel smarter, not harder!</p>
                     <div class="position-relative w-75 mx-auto animated slideInDown">
+
                         @auth
+                        {{-- <img src="{{url('img/tripai_logo.jpg')}}" alt="" style="width: 50px; height: 50px; border-radius:100%;"> --}}
                         <form action="{{ route('search') }}" method="POST">
                             @csrf
-                        <input class="form-control border-0 rounded-pill w-100 py-3 ps-4 pe-5" type="text" name="prompt" placeholder="Enter your travel requirements (e.g., 'Non-stop flight from JFK to LHR')...">
-                        <button type="submit" class="btn btn-primary rounded-pill py-2 px-4 position-absolute top-0 end-0 me-2" style="margin-top: 7px;">Search</button>
+                        {{-- <input class="form-control border-0 rounded-pill w-100 py-3 ps-4 pe-5" type="text" name="prompt" placeholder="Enter your travel requirements (e.g., 'Non-stop flight from JFK to LHR')...">
+                        <button type="submit" class="btn btn-primary rounded-pill py-2 px-4 position-absolute top-0 end-0 me-2" style="margin-top: 7px;">Search</button> --}}
+
+                        <div class="search-box">
+                            <div class="d-flex align-items-center">
+                                <img alt="User profile picture" class="rounded-circle me-2" height="40" src="https://storage.googleapis.com/a1aa/image/JjfIrUk5EemcWEqMv8R7NTLG2v9aFN2Q4hyc0xmWoHuIt0BUA.jpg" width="40"/>
+                                <input id="changingText" type="text"/>
+                                <div>
+                                    <button class="btn btn-secondary btn-sm ">
+                                        Ask Anything
+                                    </button>
+                                </div>
+
+                            </div>
+                            <hr class="mt-5 mb-1"/>
+                            <div class="" style="display: flex;justify-content: space-between;">
+                                <button class="btn btn-outline-secondary btn-sm me-2">
+                                    Inspire me where to go
+                                </button>
+                                <button class="btn btn-outline-secondary btn-sm  me-2">
+                                    Create a new Trip
+                                </button>
+                                <button class="btn btn-outline-secondary btn-sm  me-2">
+                                    Find family hotels in Dubai
+                                </button>
+                                <button class="btn btn-outline-secondary btn-sm ">
+                                    Build 7 day island hopping
+                                </button>
+                            </div>
+                        </div>
                     </form>
                     @else
                         <p class="text-center text-warning">Please <a class="btn btn-primary btn-sm" href="{{ route('login') }}">Login</a> or <a class="btn btn-primary btn-sm" href="{{ route('register') }}">Register</a> to use the search functionality.</p>
@@ -496,6 +526,22 @@
     <!-- Testimonial End -->
 
     {{-- @include() --}}
+    <script>
+        const texts = [
+            "Plan me a trip to Canada’s stunning lake",
+            "Plan me a trip to the beautiful beaches of Bali",
+            "Plan me a trip to the historic sites of Rome",
+            "Plan me a trip to the vibrant city of Tokyo"
+        ];
+        let index = 0;
+        const changingText = document.getElementById("changingText");
 
+        function changeText() {
+            changingText.placeholder = texts[index];
+            index = (index + 1) % texts.length;
+        }
+
+        setInterval(changeText, 3000);
+    </script>
 @endsection
 {{-- <x-button-popup></x-button-popup> --}}
