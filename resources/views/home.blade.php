@@ -526,131 +526,6 @@
 
     {{-- @include() --}}
     <script>
-        // const texts = [
-        //     "Plan me a trip to Canada’s stunning lake",
-        //     "Plan me a trip to the beautiful beaches of Bali",
-        //     "Plan me a trip to the historic sites of Rome",
-        //     "Plan me a trip to the vibrant city of Tokyo"
-        // ];
-        // let index = 0;
-        // const changingText = document.getElementById("changingText");
-
-        // function changeText() {
-        //     changingText.placeholder = texts[index];
-        //     index = (index + 1) % texts.length;
-        // }
-
-        // setInterval(changeText, 3000);
-
-        // const texts = [
-        //     "Plan me a trip to Canada’s stunning lake",
-        //     "Plan me a trip to the beautiful beaches of Bali",
-        //     "Plan me a trip to the historic sites of Rome",
-        //     "Plan me a trip to the vibrant city of Tokyo"
-        // ];
-        // let index = 0;
-        // const changingText = document.getElementById("changingText");
-
-        // function changeText() {
-        //     changingText.placeholder = texts[index];
-        //     index = (index + 1) % texts.length;
-        // }
-
-        // // Change text every 3 seconds
-        // setInterval(changeText, 3000);
-
-        // // Change text as you type
-        // changingText.addEventListener("input", () => {
-        //     changeText();
-        // });
-
-        // const texts = [
-        //     "Plan me a trip to Canada’s stunning lake",
-        //     "Plan me a trip to the beautiful beaches of Bali",
-        //     "Plan me a trip to the historic sites of Rome",
-        //     "Plan me a trip to the vibrant city of Tokyo"
-        // ];
-        // let index = 0;
-        // let charIndex = 0;
-        // const changingText = document.getElementById("changingText");
-
-        // function typeText() {
-        //     if (charIndex < texts[index].length) {
-        //         changingText.placeholder += texts[index].charAt(charIndex);
-        //         charIndex++;
-        //         setTimeout(typeText, 100); // Adjust typing speed here
-        //     } else {
-        //         setTimeout(deleteText, 2000); // Wait before deleting
-        //     }
-        // }
-
-        // function deleteText() {
-        //     if (charIndex > 0) {
-        //         changingText.placeholder = changingText.placeholder.slice(0, -1);
-        //         charIndex--;
-        //         setTimeout(deleteText, 50); // Adjust deleting speed here
-        //     } else {
-        //         index = (index + 1) % texts.length;
-        //         setTimeout(typeText, 500); // Wait before typing next text
-        //     }
-        // }
-
-        // typeText();
-
-
-        // document.getElementById('askAnythingButton').addEventListener('click', function () {
-        //     const button = this;
-        //     button.disabled = true;
-
-        //     // Add loading spinner
-        //     button.innerHTML = '<span class="loading-spinner"></span> Loading...';
-
-        //     // Simulate a short delay before redirecting
-        //     setTimeout(function () {
-        //         window.location.href = '/chat';
-        //     }, 1000); // Adjust the delay as needed
-        // });
-
-
-        // const askAnythingButton = document.getElementById('askAnythingButton');
-        // const otherButtons = document.querySelectorAll('.other-button');
-
-        // const showLoadingAndRedirect = () => {
-        //     askAnythingButton.disabled = true;
-        //     askAnythingButton.innerHTML = '<span class="loading-spinner"></span> Loading...';
-
-        //     // Simulate a short delay before redirecting
-        //     setTimeout(() => {
-        //         window.location.href = '/chat';
-        //     }, 1000); // Adjust the delay as needed
-        // };
-
-        // askAnythingButton.addEventListener('click', showLoadingAndRedirect);
-        // otherButtons.forEach(button => button.addEventListener('click', showLoadingAndRedirect));
-
-        // const askAnythingButton = document.getElementById('askAnythingButton');
-        // const otherButtons = document.querySelectorAll('.other-button');
-        // const changingText = document.getElementById('changingText');
-        // const errorMessage = document.getElementById('errorMessage');
-
-        // const showLoadingAndRedirect = () => {
-        //     if (changingText.value.trim() === "") {
-        //         errorMessage.style.display = "block";
-        //         return;
-        //     }
-
-        //     errorMessage.style.display = "none";
-        //     askAnythingButton.disabled = true;
-        //     askAnythingButton.innerHTML = '<span class="loading-spinner"></span> Loading...';
-
-        //     // Simulate a short delay before redirecting
-        //     setTimeout(() => {
-        //         window.location.href = '/chat';
-        //     }, 1000); // Adjust the delay as needed
-        // };
-
-        // askAnythingButton.addEventListener('click', showLoadingAndRedirect);
-        // otherButtons.forEach(button => button.addEventListener('click', showLoadingAndRedirect));
 
         const texts = [
             "Plan me a trip to Canada’s stunning lake",
@@ -666,9 +541,9 @@
             if (charIndex < texts[index].length) {
                 changingText.placeholder += texts[index].charAt(charIndex);
                 charIndex++;
-                setTimeout(typeText, 100); // Adjust typing speed here
+                setTimeout(typeText, 100);
             } else {
-                setTimeout(deleteText, 2000); // Wait before deleting
+                setTimeout(deleteText, 2000);
             }
         }
 
@@ -676,14 +551,13 @@
             if (charIndex > 0) {
                 changingText.placeholder = changingText.placeholder.slice(0, -1);
                 charIndex--;
-                setTimeout(deleteText, 50); // Adjust deleting speed here
+                setTimeout(deleteText, 50);
             } else {
                 index = (index + 1) % texts.length;
-                setTimeout(typeText, 500); // Wait before typing next text
+                setTimeout(typeText, 500);
             }
         }
 
-        // Start the typing effect
         typeText();
 
         const askAnythingButton = document.getElementById('askAnythingButton');
@@ -700,10 +574,10 @@
             askAnythingButton.disabled = true;
             askAnythingButton.innerHTML = '<span class="loading-spinner"></span> Loading...';
 
-            // Simulate a short delay before redirecting
+
             setTimeout(() => {
                 window.location.href = '/chat';
-            }, 1000); // Adjust the delay as needed
+            }, 1000);
         };
 
         askAnythingButton.addEventListener('click', showLoadingAndRedirect);
