@@ -31,4 +31,8 @@ class PageController extends Controller
     {
         return view('book_call');
     }
+	public function chat()
+    {
+        return view('chat');
+    }
 }

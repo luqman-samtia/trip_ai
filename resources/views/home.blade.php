@@ -35,18 +35,15 @@
                     <div class="position-relative w-75 mx-auto animated slideInDown">
 
                         @auth
-                        {{-- <img src="{{url('img/tripai_logo.jpg')}}" alt="" style="width: 50px; height: 50px; border-radius:100%;"> --}}
-                        <form action="{{ route('search') }}" method="POST">
+                        {{-- action="{{ route('search') }}" method="POST" --}}
+                        <form >
                             @csrf
-                        {{-- <input class="form-control border-0 rounded-pill w-100 py-3 ps-4 pe-5" type="text" name="prompt" placeholder="Enter your travel requirements (e.g., 'Non-stop flight from JFK to LHR')...">
-                        <button type="submit" class="btn btn-primary rounded-pill py-2 px-4 position-absolute top-0 end-0 me-2" style="margin-top: 7px;">Search</button> --}}
-
                         <div class="search-box">
                             <div class="d-flex align-items-center">
                                 <img alt="User profile picture" class="rounded-circle me-2" height="40" src="https://storage.googleapis.com/a1aa/image/JjfIrUk5EemcWEqMv8R7NTLG2v9aFN2Q4hyc0xmWoHuIt0BUA.jpg" width="40"/>
                                 <input id="changingText" type="text"/>
                                 <div>
-                                    <button class="btn btn-secondary btn-sm ">
+                                    <button id="askAnythingButton" class="btn btn-secondary btn-sm " type="button">
                                         Ask Anything
                                     </button>
                                 </div>
@@ -54,20 +51,22 @@
                             </div>
                             <hr class="mt-5 mb-1"/>
                             <div class="" style="display: flex;justify-content: space-between;">
-                                <button class="btn btn-outline-secondary btn-sm me-2">
+                                <button class="btn btn-outline-secondary btn-sm me-2 other-button" type="button">
                                     Inspire me where to go
                                 </button>
-                                <button class="btn btn-outline-secondary btn-sm  me-2">
+                                <button class="btn btn-outline-secondary btn-sm  me-2 other-button" type="button">
                                     Create a new Trip
                                 </button>
-                                <button class="btn btn-outline-secondary btn-sm  me-2">
+                                <button class="btn btn-outline-secondary btn-sm  me-2 other-button" type="button">
                                     Find family hotels in Dubai
                                 </button>
-                                <button class="btn btn-outline-secondary btn-sm ">
+                                <button class="btn btn-outline-secondary btn-sm other-button" type="button">
                                     Build 7 day island hopping
                                 </button>
                             </div>
                         </div>
+                        <div id="errorMessage" class="error" style="display: none;">Please enter some text.</div>
+
                     </form>
                     @else
                         <p class="text-center text-warning">Please <a class="btn btn-primary btn-sm" href="{{ route('login') }}">Login</a> or <a class="btn btn-primary btn-sm" href="{{ route('register') }}">Register</a> to use the search functionality.</p>
@@ -527,6 +526,132 @@
 
     {{-- @include() --}}
     <script>
+        // const texts = [
+        //     "Plan me a trip to Canada’s stunning lake",
+        //     "Plan me a trip to the beautiful beaches of Bali",
+        //     "Plan me a trip to the historic sites of Rome",
+        //     "Plan me a trip to the vibrant city of Tokyo"
+        // ];
+        // let index = 0;
+        // const changingText = document.getElementById("changingText");
+
+        // function changeText() {
+        //     changingText.placeholder = texts[index];
+        //     index = (index + 1) % texts.length;
+        // }
+
+        // setInterval(changeText, 3000);
+
+        // const texts = [
+        //     "Plan me a trip to Canada’s stunning lake",
+        //     "Plan me a trip to the beautiful beaches of Bali",
+        //     "Plan me a trip to the historic sites of Rome",
+        //     "Plan me a trip to the vibrant city of Tokyo"
+        // ];
+        // let index = 0;
+        // const changingText = document.getElementById("changingText");
+
+        // function changeText() {
+        //     changingText.placeholder = texts[index];
+        //     index = (index + 1) % texts.length;
+        // }
+
+        // // Change text every 3 seconds
+        // setInterval(changeText, 3000);
+
+        // // Change text as you type
+        // changingText.addEventListener("input", () => {
+        //     changeText();
+        // });
+
+        // const texts = [
+        //     "Plan me a trip to Canada’s stunning lake",
+        //     "Plan me a trip to the beautiful beaches of Bali",
+        //     "Plan me a trip to the historic sites of Rome",
+        //     "Plan me a trip to the vibrant city of Tokyo"
+        // ];
+        // let index = 0;
+        // let charIndex = 0;
+        // const changingText = document.getElementById("changingText");
+
+        // function typeText() {
+        //     if (charIndex < texts[index].length) {
+        //         changingText.placeholder += texts[index].charAt(charIndex);
+        //         charIndex++;
+        //         setTimeout(typeText, 100); // Adjust typing speed here
+        //     } else {
+        //         setTimeout(deleteText, 2000); // Wait before deleting
+        //     }
+        // }
+
+        // function deleteText() {
+        //     if (charIndex > 0) {
+        //         changingText.placeholder = changingText.placeholder.slice(0, -1);
+        //         charIndex--;
+        //         setTimeout(deleteText, 50); // Adjust deleting speed here
+        //     } else {
+        //         index = (index + 1) % texts.length;
+        //         setTimeout(typeText, 500); // Wait before typing next text
+        //     }
+        // }
+
+        // typeText();
+
+
+        // document.getElementById('askAnythingButton').addEventListener('click', function () {
+        //     const button = this;
+        //     button.disabled = true;
+
+        //     // Add loading spinner
+        //     button.innerHTML = '<span class="loading-spinner"></span> Loading...';
+
+        //     // Simulate a short delay before redirecting
+        //     setTimeout(function () {
+        //         window.location.href = '/chat';
+        //     }, 1000); // Adjust the delay as needed
+        // });
+
+
+        // const askAnythingButton = document.getElementById('askAnythingButton');
+        // const otherButtons = document.querySelectorAll('.other-button');
+
+        // const showLoadingAndRedirect = () => {
+        //     askAnythingButton.disabled = true;
+        //     askAnythingButton.innerHTML = '<span class="loading-spinner"></span> Loading...';
+
+        //     // Simulate a short delay before redirecting
+        //     setTimeout(() => {
+        //         window.location.href = '/chat';
+        //     }, 1000); // Adjust the delay as needed
+        // };
+
+        // askAnythingButton.addEventListener('click', showLoadingAndRedirect);
+        // otherButtons.forEach(button => button.addEventListener('click', showLoadingAndRedirect));
+
+        // const askAnythingButton = document.getElementById('askAnythingButton');
+        // const otherButtons = document.querySelectorAll('.other-button');
+        // const changingText = document.getElementById('changingText');
+        // const errorMessage = document.getElementById('errorMessage');
+
+        // const showLoadingAndRedirect = () => {
+        //     if (changingText.value.trim() === "") {
+        //         errorMessage.style.display = "block";
+        //         return;
+        //     }
+
+        //     errorMessage.style.display = "none";
+        //     askAnythingButton.disabled = true;
+        //     askAnythingButton.innerHTML = '<span class="loading-spinner"></span> Loading...';
+
+        //     // Simulate a short delay before redirecting
+        //     setTimeout(() => {
+        //         window.location.href = '/chat';
+        //     }, 1000); // Adjust the delay as needed
+        // };
+
+        // askAnythingButton.addEventListener('click', showLoadingAndRedirect);
+        // otherButtons.forEach(button => button.addEventListener('click', showLoadingAndRedirect));
+
         const texts = [
             "Plan me a trip to Canada’s stunning lake",
             "Plan me a trip to the beautiful beaches of Bali",
@@ -534,14 +659,55 @@
             "Plan me a trip to the vibrant city of Tokyo"
         ];
         let index = 0;
+        let charIndex = 0;
         const changingText = document.getElementById("changingText");
 
-        function changeText() {
-            changingText.placeholder = texts[index];
-            index = (index + 1) % texts.length;
+        function typeText() {
+            if (charIndex < texts[index].length) {
+                changingText.placeholder += texts[index].charAt(charIndex);
+                charIndex++;
+                setTimeout(typeText, 100); // Adjust typing speed here
+            } else {
+                setTimeout(deleteText, 2000); // Wait before deleting
+            }
         }
 
-        setInterval(changeText, 3000);
+        function deleteText() {
+            if (charIndex > 0) {
+                changingText.placeholder = changingText.placeholder.slice(0, -1);
+                charIndex--;
+                setTimeout(deleteText, 50); // Adjust deleting speed here
+            } else {
+                index = (index + 1) % texts.length;
+                setTimeout(typeText, 500); // Wait before typing next text
+            }
+        }
+
+        // Start the typing effect
+        typeText();
+
+        const askAnythingButton = document.getElementById('askAnythingButton');
+        const otherButtons = document.querySelectorAll('.other-button');
+        const errorMessage = document.getElementById('errorMessage');
+
+        const showLoadingAndRedirect = () => {
+            if (changingText.value.trim() === "") {
+                errorMessage.style.display = "block";
+                return;
+            }
+
+            errorMessage.style.display = "none";
+            askAnythingButton.disabled = true;
+            askAnythingButton.innerHTML = '<span class="loading-spinner"></span> Loading...';
+
+            // Simulate a short delay before redirecting
+            setTimeout(() => {
+                window.location.href = '/chat';
+            }, 1000); // Adjust the delay as needed
+        };
+
+        askAnythingButton.addEventListener('click', showLoadingAndRedirect);
+        otherButtons.forEach(button => button.addEventListener('click', showLoadingAndRedirect));
     </script>
 @endsection
 {{-- <x-button-popup></x-button-popup> --}}

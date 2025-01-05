@@ -16,28 +16,31 @@ use App\Http\Controllers\BotManController;
 Route::get('/', [PageController::class, 'home'])->name('home');
 
 // Route::get('/chat' , [BotManController::class, 'chat'])->name('chat');
-Route::get('/chat', function () {
-     $response = app('openai')->chat()->create([
-        'model' => 'gpt-4o-mini',
-        'messages' => [
-            ['role' => 'system', 'content' => 'You are a helpful assistant.'],
-            ['role' => 'user', 'content' => 'What is the capital of the United States?'],
-            ['role' => 'assistant', 'content' => 'The capital of the United States is Washington, D.C.'],
-        ],
+// Route::get('/chat', function () {
+//      $response = app('openai')->chat()->create([
+//         'model' => 'gpt-4o-mini',
+//         'messages' => [
+//             ['role' => 'system', 'content' => 'You are a helpful assistant.'],
+//             ['role' => 'user', 'content' => 'What is the capital of the United States?'],
+//             ['role' => 'assistant', 'content' => 'The capital of the United States is Washington, D.C.'],
+//         ],
 
-    ]);
-// Extract AI's response
-$answer = $response['choices'][0]['message']['content'];
+//     ]);
 
-// Return response as JSON
-return response()->json(['answer' => $answer]);
-        // dd($response);
-})->name('chat');
+// $answer = $response['choices'][0]['message']['content'];
+
+
+// return response()->json(['answer' => $answer]);
+//         // dd($response);
+// })->name('chat');
+
+
 // Static pages
 Route::get('/about', [PageController::class, 'about'])->name('about');
 Route::get('/umra-haj', [PageController::class, 'umraHaj'])->name('umra.haj');
 Route::get('/contact', [PageController::class, 'contact'])->name('contact');
 Route::get('/book-call', [PageController::class, 'book_call'])->name('book-call');
+Route::get('/chat', [PageController::class, 'chat'])->name('chat');
 
 // Subscription routes
 Route::middleware(['auth'])->group(function () {
