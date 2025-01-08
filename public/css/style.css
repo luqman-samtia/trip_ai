@@ -49,6 +49,7 @@
     border-radius: 5px;
 }
 :root {
+    /* --primary: #0B0B60 !important; */
     --primary: #0B0B60 !important;
     --secondary: #FE8800;
     --light: #F5F5F5;

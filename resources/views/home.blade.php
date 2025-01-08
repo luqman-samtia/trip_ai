@@ -8,14 +8,14 @@
             <div class="row justify-content-center py-5">
                 <div class="col-lg-10 pt-lg-5 mt-lg-5 text-center">
                     <h1 class="display-3 text-white mb-3 animated slideInDown">TripAI - Your Smart TravelBuddy</h1>
-                    <p class="fs-4 text-white mb-4 animated slideInDown">Enjoy stress-free travel from start to finish. From booking flights and hotels to arranging personalized tours and transfers, we ensure your travel smarter, not harder!</p>
+                    <p class="fs-4 text-white mb-5 animated slideInDown">Book everything with our all-in-one service for flights, hotels and tours. We ensure your travel smarter, not harder!</p>
                     <div class="position-relative w-75 mx-auto animated slideInDown">
 
                         @auth
 
                         <form >
                             @csrf
-                        <div class="search-box">
+                        <div class="search-box mt-5" >
                             <div class="d-flex align-items-center">
                                 <img alt="User profile picture" class="rounded-circle me-2" height="40" src="https://storage.googleapis.com/a1aa/image/JjfIrUk5EemcWEqMv8R7NTLG2v9aFN2Q4hyc0xmWoHuIt0BUA.jpg" width="40"/>
                                 <input id="changingText" type="text"/>
@@ -46,7 +46,7 @@
 
                     </form>
                     @else
-                        <p class="text-center text-warning">Please <a class="btn btn-primary btn-sm" href="{{ route('login') }}">Login</a> or <a class="btn btn-primary btn-sm" href="{{ route('register') }}">Register</a> to use the search functionality.</p>
+                        <p class="text-center " style="color:white;">Please <a class="btn btn-primary btn-sm" href="{{ route('login') }}">Login</a> or <a class="btn btn-primary btn-sm" href="{{ route('register') }}">Register</a> to use the search functionality.</p>
                     @endauth
                     @if(session('error'))
                     <div class="alert alert-danger alert-dismissible mt-5">

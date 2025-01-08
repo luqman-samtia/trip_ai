@@ -47,7 +47,7 @@
 
 
     </head>
-    <body class="font-sans antialiased">
+    <body class="font-sans antialiased" style=" background: #0B0B60; !important;">
         <div class="min-h-screen bg-gray-100 dark:bg-gray-900">
             <!-- Navigation -->
             @include('layouts.navigation')
