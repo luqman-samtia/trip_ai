@@ -62,7 +62,7 @@
             @endisset
 
             <!-- Page Content -->
-            <main>
+            <main style="background: #0B0B60 !important;color:white;" >
                 @yield('content')
             </main>
         </div>

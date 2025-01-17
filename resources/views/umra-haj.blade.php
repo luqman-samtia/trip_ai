@@ -61,55 +61,55 @@
     <div class="container-xxl py-5">
         <div class="container">
             <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                <h6 class="section-title  text-center text-primary px-3">Packages</h6>
+                <h6 class="section-title  text-center  px-3">Packages</h6>
                 <h1 class="mb-5">Available Packages</h1>
             </div>
             <div class="row g-4 justify-content-center">
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="package-item">
+                <div class="col-lg-4 col-md-6 wow fadeInUp service-item" data-wow-delay="0.1s">
+                    <div class="package-item ">
                         <div class="overflow-hidden">
                             <img class="img-fluid" src="img/umra1.jpg" alt="">
                         </div>
                         <div class="d-flex border-bottom">
-                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt text-primary me-2"></i>Makkah</small>
-                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt text-primary me-2"></i>40 days</small>
-                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>23 Person</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt  me-2"></i>Makkah</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt  me-2"></i>40 days</small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-user  me-2"></i>23 Person</small>
                         </div>
                         <div class="text-center p-4">
                             <h3 class="mb-0">$149.00</h3>
                             <div class="mb-3">
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star "></small>
+                                <small class="fa fa-star "></small>
+                                <small class="fa fa-star "></small>
+                                <small class="fa fa-star "></small>
+                                <small class="fa fa-star "></small>
                             </div>
                             <p>Hajj is one of the five pillars of Islam, a mandatory religious duty for Muslims that must be carried out at least once in their lifetime by those who are physically and financially capable</p>
                             <div class="d-flex justify-content-center mb-2">
                                 <a href="#" class="btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Read More</a>
-                                <a href="#" class="btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Book Now</a>
+                                <a href="#" class="btn btn-sm btn-primary px-3 " style="border-radius: 0 30px 30px 0;">Book Now</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="col-lg-4 col-md-6 wow fadeInUp service-item" data-wow-delay="0.3s">
                     <div class="package-item">
                         <div class="overflow-hidden">
                             <img class="img-fluid" src="img/hajj2.jpg" alt="">
                         </div>
                         <div class="d-flex border-bottom">
-                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt text-primary me-2"></i>Makkah</small>
-                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt text-primary me-2"></i>40 days</small>
-                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>23 Person</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt  me-2"></i>Makkah</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt  me-2"></i>40 days</small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-user  me-2"></i>23 Person</small>
                         </div>
                         <div class="text-center p-4">
                             <h3 class="mb-0">$139.00</h3>
                             <div class="mb-3">
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star "></small>
+                                <small class="fa fa-star "></small>
+                                <small class="fa fa-star "></small>
+                                <small class="fa fa-star "></small>
+                                <small class="fa fa-star "></small>
                             </div>
                             <p>Hajj is one of the five pillars of Islam, a mandatory religious duty for Muslims that must be carried out at least once in their lifetime by those who are physically and financially capable</p>
                             <div class="d-flex justify-content-center mb-2">
@@ -119,24 +119,24 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="col-lg-4 col-md-6 wow fadeInUp service-item" data-wow-delay="0.5s">
                     <div class="package-item">
                         <div class="overflow-hidden">
                             <img class="img-fluid" src="img/umra1.jpg" alt="">
                         </div>
                         <div class="d-flex border-bottom">
-                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt text-primary me-2"></i>Madina</small>
-                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt text-primary me-2"></i>40 days</small>
-                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>23 Person</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt  me-2"></i>Madina</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt  me-2"></i>40 days</small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-user  me-2"></i>23 Person</small>
                         </div>
                         <div class="text-center p-4">
                             <h3 class="mb-0">$189.00</h3>
                             <div class="mb-3">
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star "></small>
+                                <small class="fa fa-star "></small>
+                                <small class="fa fa-star "></small>
+                                <small class="fa fa-star "></small>
+                                <small class="fa fa-star "></small>
                             </div>
                             <p>Umrah is a pilgrimage to Mecca that can be undertaken at any time of the year, unlike Hajj which has specific dates. Although it is not obligatory, it is highly recommended in Islam</p>
                             <div class="d-flex justify-content-center mb-2">
@@ -219,12 +219,12 @@
  <div class="container-xxl py-5">
     <div class="container">
         <div class="text-center pb-4 wow fadeInUp" data-wow-delay="0.1s">
-            <h6 class="section-title text-center text-primary px-3">Process</h6>
+            <h6 class="section-title text-center  px-3">Process</h6>
             <h1 class="mb-5">3 Easy Steps</h1>
         </div>
         <div class="row gy-5 gx-4 justify-content-center">
             <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="position-relative border border-primary pt-5 pb-4 px-4">
+                <div class="position-relative border border-primary pt-5 pb-4 px-4 service-item">
                     <div class="d-inline-flex align-items-center justify-content-center bg-primary rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
                         <i class="fa fa-globe fa-3x text-white"></i>
                     </div>
@@ -237,7 +237,7 @@
                 </div>
             </div>
             <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.3s">
-                <div class="position-relative border border-primary pt-5 pb-4 px-4">
+                <div class="position-relative border border-primary pt-5 pb-4 px-4 service-item">
                     <div class="d-inline-flex align-items-center justify-content-center bg-primary rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
                         <i class="fa fa-dollar-sign fa-3x text-white"></i>
                     </div>
@@ -250,7 +250,7 @@
                 </div>
             </div>
             <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.5s">
-                <div class="position-relative border border-primary pt-5 pb-4 px-4">
+                <div class="position-relative border border-primary pt-5 pb-4 px-4 service-item">
                     <div class="d-inline-flex align-items-center justify-content-center bg-primary rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
                         <i class="fa fa-plane fa-3x text-white"></i>
                     </div>

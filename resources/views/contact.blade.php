@@ -52,10 +52,10 @@
 </div>
 <!-- Navbar & Hero End -->
 <!-- Contact Start -->
-<div class="container-xxl py-5">
-    <div class="container">
+<div class="container-xxl py-5 service-item">
+    <div class="container ">
         <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-            <h6 class="section-title text-center text-primary px-3">Contact Us</h6>
+            <h6 class="section-title text-center px-3">Contact Us</h6>
             <h1 class="mb-5">Contact For Any Query</h1>
         </div>
         <div class="row g-4">
@@ -67,7 +67,7 @@
                         <i class="fa fa-map-marker-alt text-white"></i>
                     </div>
                     <div class="ms-3">
-                        <h5 class="text-primary">Office</h5>
+                        <h5 class="">Office</h5>
                         <p class="mb-0">123 Street, New York, USA</p>
                     </div>
                 </div>
@@ -76,7 +76,7 @@
                         <i class="fa fa-phone-alt text-white"></i>
                     </div>
                     <div class="ms-3">
-                        <h5 class="text-primary">Mobile</h5>
+                        <h5 class="">Mobile</h5>
                         <p class="mb-0">+012 345 67890</p>
                     </div>
                 </div>
@@ -85,7 +85,7 @@
                         <i class="fa fa-envelope-open text-white"></i>
                     </div>
                     <div class="ms-3">
-                        <h5 class="text-primary">Email</h5>
+                        <h5 class="">Email</h5>
                         <p class="mb-0">info@example.com</p>
                     </div>
                 </div>
@@ -124,7 +124,7 @@
                             </div>
                         </div>
                         <div class="col-12">
-                            <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
+                            <button class="btn btn-info-custom w-100 py-3" type="submit">Send Message</button>
                         </div>
                     </div>
                 </form>

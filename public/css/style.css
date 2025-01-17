@@ -1,7 +1,36 @@
 /********** Template CSS **********/
 
+.btn-info-custom{
+    background-color: darkblue !important;
+    border-color: var(--primary) !important;
+}
+h1{
+    color: white;
+}
+h5{
+    color: white;
+    padding: 10px;
+    background: darkblue;
+    border-radius: 10px;
 
-
+}
+h6{
+    color: white !important;
+    padding: 10px;
+    background: darkblue;
+    border-radius: 10px;
+    margin-bottom: 10px !important;
+}
+h3{
+    color: white !important;
+}
+.btn-primary{
+    background-color: darkblue !important;
+    border-color: var(--primary) !important;
+}
+.text-primary{
+    color: white !important;
+}
 /* search-box custom style */
 .loading-spinner {
     display: inline-block;
@@ -49,6 +78,7 @@
     border-radius: 5px;
 }
 :root {
+    /* --primary: #0B0B60 !important; */
     /* --primary: #0B0B60 !important; */
     --primary: #0B0B60 !important;
     --secondary: #FE8800;
@@ -290,7 +320,7 @@
 
 /*** Service ***/
 .service-item {
-    box-shadow: 0 0 45px rgba(0, 0, 0, .08);
+    box-shadow: 0 0 45px rgba(0, 0, 0, 1.08);
     transition: .5s;
 }
 
@@ -305,7 +335,9 @@
 .service-item:hover * {
     color: var(--light) !important;
 }
-
+input::placeholder{
+    color: darkblue !important;
+}
 
 /*** Destination ***/
 .destination img {
@@ -374,7 +406,8 @@
     left: 0;
     height: 100%;
     width: 0;
-    background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    /* background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%); */
+    background: linear-gradient(to right, rgba(0, 0, 139, 1) 0%, rgba(0, 0, 139, 0) 100%);
     z-index: 1;
 }
 
@@ -385,7 +418,8 @@
     right: 0;
     height: 100%;
     width: 0;
-    background: linear-gradient(to left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    /* background: linear-gradient(to left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%); */
+    background: linear-gradient(to left, rgba(0, 0, 139, 1) 0%, rgba(0, 0, 139, 0) 100%);
     z-index: 1;
 }
 

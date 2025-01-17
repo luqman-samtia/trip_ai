@@ -84,29 +84,29 @@
                 </div>
             </div>
             <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
-                <h5 class="section-title  text-start text-primary pe-3">Who We Are</h5>
-                <h1 class="mb-4">Welcome to <span class="text-primary">TripAI - Your Smart TravelBuddy</span></h1>
+                <h5 class="section-title  text-start  pe-3">Who We Are</h5>
+                <h1 class="mb-4">Welcome to <span class="">TripAI - Your Smart TravelBuddy</span></h1>
                 <p class="mb-4">Enjoy stress-free travel from start to finish. From booking flights and hotels to arranging personalized tours and transfers, we ensure your travel smarter, not harder!"
                 </p>
                 {{-- <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p> --}}
                 <div class="row gy-2 gx-4 mb-4">
                     <div class="col-sm-6">
-                        <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>First Class Flights</p>
+                        <p class="mb-0"><i class="fa fa-arrow-right  me-2"></i>First Class Flights</p>
                     </div>
                     <div class="col-sm-6">
-                        <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Handpicked Hotels</p>
+                        <p class="mb-0"><i class="fa fa-arrow-right  me-2"></i>Handpicked Hotels</p>
                     </div>
                     <div class="col-sm-6">
-                        <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>5 Star Accommodations</p>
+                        <p class="mb-0"><i class="fa fa-arrow-right  me-2"></i>5 Star Accommodations</p>
                     </div>
                     <div class="col-sm-6">
-                        <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Latest Model Vehicles</p>
+                        <p class="mb-0"><i class="fa fa-arrow-right  me-2"></i>Latest Model Vehicles</p>
                     </div>
                     <div class="col-sm-6">
-                        <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>150 Premium City Tours</p>
+                        <p class="mb-0"><i class="fa fa-arrow-right  me-2"></i>150 Premium City Tours</p>
                     </div>
                     <div class="col-sm-6">
-                        <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>24/7 Service</p>
+                        <p class="mb-0"><i class="fa fa-arrow-right  me-2"></i>24/7 Service</p>
                     </div>
                 </div>
                 <a class="btn btn-primary py-3 px-5 mt-2" href="">Read More</a>
@@ -122,7 +122,7 @@
 <div class="container-xxl py-5">
     <div class="container">
         <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-            <h6 class="section-title  text-center text-primary px-3">Travel Guide</h6>
+            <h6 class="section-title  text-center px-3">Travel Guide</h6>
             <h1 class="mb-5">Meet Our Guide</h1>
         </div>
         <div class="row g-4">

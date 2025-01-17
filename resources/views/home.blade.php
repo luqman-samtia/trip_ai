@@ -106,29 +106,29 @@
                 </div>
             </div>
             <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
-                <h5 class="section-title  text-start text-primary pe-3">Who We Are</h5>
-                <h1 class="mb-4">Welcome to <span class="text-primary">TripAI - Your Smart TravelBuddy</span></h1>
+                <h5 class="section-title  text-start pe-3">Who We Are</h5>
+                <h1 class="mb-4">Welcome to <span class="">TripAI - Your Smart TravelBuddy</span></h1>
                 <p class="mb-4">At TripAI, we believe that planning a journey should be as exciting as the trip itself. With cutting-edge AI technology, we make travel accessible, personalized, and unforgettable."
                 </p>
                 {{-- <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p> --}}
                 <div class="row gy-2 gx-4 mb-4">
                     <div class="col-sm-6">
-                        <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>First Class Flights</p>
+                        <p class="mb-0"><i class="fa fa-arrow-right  me-2"></i>First Class Flights</p>
                     </div>
                     <div class="col-sm-6">
-                        <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Handpicked Hotels</p>
+                        <p class="mb-0"><i class="fa fa-arrow-right  me-2"></i>Handpicked Hotels</p>
                     </div>
                     <div class="col-sm-6">
-                        <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>5 Star Accommodations</p>
+                        <p class="mb-0"><i class="fa fa-arrow-right  me-2"></i>5 Star Accommodations</p>
                     </div>
                     <div class="col-sm-6">
-                        <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Latest Model Vehicles</p>
+                        <p class="mb-0"><i class="fa fa-arrow-right  me-2"></i>Latest Model Vehicles</p>
                     </div>
                     <div class="col-sm-6">
-                        <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>150 Premium City Tours</p>
+                        <p class="mb-0"><i class="fa fa-arrow-right  me-2"></i>150 Premium City Tours</p>
                     </div>
                     <div class="col-sm-6">
-                        <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>24/7 Service</p>
+                        <p class="mb-0"><i class="fa fa-arrow-right  me-2"></i>24/7 Service</p>
                     </div>
                 </div>
                 <a class="btn btn-primary py-3 px-5 mt-2" href="">Read More</a>
@@ -143,14 +143,14 @@
 <div class="container-xxl py-5">
     <div class="container">
         <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-            <h6 class="section-title  text-center text-primary px-3">Services</h6>
+            <h6 class="section-title  text-center  px-3">Services</h6>
             <h1 class="mb-5">Our Services</h1>
         </div>
         <div class="row g-4">
             <div class="col-lg-3 col-sm-6 wow fadeInUp " data-wow-delay="0.1s" >
                 <div class="service-item rounded pt-3" style="min-height: 300px;">
                     <div class="p-4">
-                        <i class="fa fa-3x fa-globe text-primary mb-4"></i>
+                        <i class="fa fa-3x fa-globe  mb-4"></i>
                         <h5>WorldWide Tours</h5>
                         <p>WorldWide Tours is your gateway to discovering the most breathtaking destinations across the globe. </p>
                     </div>
@@ -159,7 +159,7 @@
             <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
                 <div class="service-item rounded pt-3" style="min-height: 300px;">
                     <div class="p-4">
-                        <i class="fa fa-3x fa-hotel text-primary mb-4"></i>
+                        <i class="fa fa-3x fa-hotel  mb-4"></i>
                         <h5>Hotel Reservation</h5>
                         <p>Hotel Reservation is a comprehensive system designed to streamline the process of booking accommodations at hotels. </p>
                     </div>
@@ -168,7 +168,7 @@
             <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
                 <div class="service-item rounded pt-3" style="min-height: 300px;">
                     <div class="p-4">
-                        <i class="fa fa-3x fa-user text-primary mb-4"></i>
+                        <i class="fa fa-3x fa-user  mb-4"></i>
                         <h5>Travel Guides</h5>
                         <p>Travel Guides are essential resources for any traveler, providing comprehensive information and expert advice on a wide range of destinations around the world.</p>
                     </div>
@@ -177,7 +177,7 @@
             <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
                 <div class="service-item rounded pt-3" style="min-height: 300px;">
                     <div class="p-4">
-                        <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                        <i class="fa fa-3x fa-cog  mb-4"></i>
                         <h5>Event Management</h5>
                         <p>Event Management encompasses the planning, organizing, and execution of various types of events, ranging from corporate conferences and trade shows to weddings, festivals, and parties. </p>
                     </div>
@@ -196,7 +196,7 @@
     <div class="container-xxl py-5 destination">
         <div class="container">
             <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                <h6 class="section-title  text-center text-primary px-3">Destination</h6>
+                <h6 class="section-title  text-center  px-3">Destination</h6>
                 <h1 class="mb-5">Popular Destination</h1>
             </div>
             <div class="row g-3">
@@ -305,12 +305,12 @@
  <div class="container-xxl py-5">
     <div class="container">
         <div class="text-center pb-4 wow fadeInUp" data-wow-delay="0.1s">
-            <h6 class="section-title text-center text-primary px-3">Process</h6>
+            <h6 class="section-title text-center  px-3">Process</h6>
             <h1 class="mb-5">3 Easy Steps</h1>
         </div>
         <div class="row gy-5 gx-4 justify-content-center">
             <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="position-relative border border-primary pt-5 pb-4 px-4">
+                <div class="position-relative border border-primary pt-5 pb-4 px-4 service-item">
                     <div class="d-inline-flex align-items-center justify-content-center bg-primary rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
                         <i class="fa fa-globe fa-3x text-white"></i>
                     </div>
@@ -323,7 +323,7 @@
                 </div>
             </div>
             <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.3s">
-                <div class="position-relative border border-primary pt-5 pb-4 px-4">
+                <div class="position-relative border border-primary pt-5 pb-4 px-4 service-item">
                     <div class="d-inline-flex align-items-center justify-content-center bg-primary rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
                         <i class="fa fa-dollar-sign fa-3x text-white"></i>
                     </div>
@@ -336,7 +336,7 @@
                 </div>
             </div>
             <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.5s">
-                <div class="position-relative border border-primary pt-5 pb-4 px-4">
+                <div class="position-relative border border-primary pt-5 pb-4 px-4 service-item">
                     <div class="d-inline-flex align-items-center justify-content-center bg-primary rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
                         <i class="fa fa-plane fa-3x text-white"></i>
                     </div>
@@ -357,7 +357,7 @@
      <div class="container-xxl py-5">
         <div class="container">
             <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                <h6 class="section-title text-center text-primary px-3">Travel Guide</h6>
+                <h6 class="section-title text-center  px-3">Travel Guide</h6>
                 <h1 class="mb-5">Meet Our Guide</h1>
             </div>
             <div class="row g-4">
@@ -434,11 +434,11 @@
      <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
         <div class="container">
             <div class="text-center">
-                <h6 class="section-title  text-center text-primary px-3">Testimonial</h6>
+                <h6 class="section-title  text-center  px-3">Testimonial</h6>
                 <h1 class="mb-5">Our Clients Say!!!</h1>
             </div>
             <div class="owl-carousel testimonial-carousel position-relative">
-                <div class="testimonial-item bg-white text-center border p-4">
+                <div class="testimonial-item  text-center border p-4 ">
                     <img class="bg-white rounded-circle shadow p-1 mx-auto mb-3" src="img/team-1.jpg" style="width: 80px; height: 80px;">
                     <h5 class="mb-0">John Doe</h5>
                     <p>New York, USA</p>
@@ -446,19 +446,19 @@
 
                     </p>
                 </div>
-                <div class="testimonial-item bg-white text-center border p-4">
+                <div class="testimonial-item  text-center border p-4">
                     <img class="bg-white rounded-circle shadow p-1 mx-auto mb-3" src="img/testimonial-2.jpg" style="width: 80px; height: 80px;">
                     <h5 class="mb-0">John Doe</h5>
                     <p>New York, USA</p>
                     <p class="mt-2 mb-0">New York City, often simply called New York, is one of the most iconic and vibrant cities in the world.</p>
                 </div>
-                <div class="testimonial-item bg-white text-center border p-4">
+                <div class="testimonial-item  text-center border p-4">
                     <img class="bg-white rounded-circle shadow p-1 mx-auto mb-3" src="img/testimonial-3.jpg" style="width: 80px; height: 80px;">
                     <h5 class="mb-0">John Doe</h5>
                     <p>New York, USA</p>
                     <p class="mt-2 mb-0">New York City, often simply called New York, is one of the most iconic and vibrant cities in the world.</p>
                 </div>
-                <div class="testimonial-item bg-white text-center border p-4">
+                <div class="testimonial-item  text-center border p-4">
                     <img class="bg-white rounded-circle shadow p-1 mx-auto mb-3" src="img/team-3.jpg" style="width: 80px; height: 80px;">
                     <h5 class="mb-0">John Doe</h5>
                     <p>New York, USA</p>
